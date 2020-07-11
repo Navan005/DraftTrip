@@ -26,5 +26,8 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        TextView v = (TextView) findViewById(R.id.textView2);
+        v.setSelected(true);
     }
+    
 }
