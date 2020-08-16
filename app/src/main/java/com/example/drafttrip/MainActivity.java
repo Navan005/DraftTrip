@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
 
     private Button nextpagebtn;
     private Button signup;
+    private Button login;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,12 +36,19 @@ signup=(Button)findViewById(R.id.button2);
         signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent1=new Intent(MainActivity.this, Signup.class);
+                Intent intent1=new Intent(MainActivity.this, RegisterActivity.class);
                 startActivity(intent1);
             }
         });
 
-
+        login=(Button)findViewById(R.id.button);
+        login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent1=new Intent(MainActivity.this, signin.class);
+                startActivity(intent1);
+            }
+        });
 
 
     }
