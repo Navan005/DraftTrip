@@ -55,6 +55,7 @@
                     android:layout_height="wrap_content">
 
                     <ImageView
+                        android:id="@+id/hotel_img"
                         android:src="@drawable/hotel"
                         android:layout_width="150dp"
                         android:layout_height="130dp"
@@ -97,6 +98,7 @@
                     android:layout_height="wrap_content">
 
                     <ImageView
+                        android:id="@+id/apartment_img"
                         android:src="@drawable/apartment"
                         android:layout_width="150dp"
                         android:layout_height="130dp"
@@ -151,6 +153,7 @@
                     android:layout_height="wrap_content">
 
                     <ImageView
+                        android:id="@+id/cabin_img"
                         android:src="@drawable/cabin"
                         android:layout_width="150dp"
                         android:layout_height="130dp"
@@ -192,6 +195,7 @@
                     android:layout_height="wrap_content">
 
                     <ImageView
+                        android:id="@+id/villa_img"
                         android:src="@drawable/villa"
                         android:layout_width="150dp"
                         android:layout_height="130dp"
@@ -246,6 +250,7 @@
                     android:layout_height="wrap_content">
 
                     <ImageView
+                        android:id="@+id/cottage_img"
                         android:src="@drawable/cottage"
                         android:layout_width="150dp"
                         android:layout_height="130dp"
@@ -286,6 +291,7 @@
                     android:layout_height="wrap_content">
 
                     <ImageView
+                        android:id="@+id/country_img"
                         android:src="@drawable/country"
                         android:layout_width="150dp"
                         android:layout_height="130dp"
