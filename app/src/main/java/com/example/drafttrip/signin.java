@@ -58,7 +58,7 @@ Button b1 = (Button)findViewById(R.id.btnLogin);
             cursor = db.rawQuery("SELECT *FROM " + DatabaseHelper.TABLE_NAME + " WHERE " + DatabaseHelper.COL_4 + "=? AND " + DatabaseHelper.COL_5 + "=?", new String[]{email, password});
             if (cursor != null) {
                 if (cursor.getCount() > 0) {
-                    startActivity(new Intent(signin.this, MainActivity.class));
+                    startActivity(new Intent(signin.this, ListActivity.class));
                     Toast.makeText(getApplicationContext(), "Login sucess", Toast.LENGTH_SHORT).show();
 
                 } else {

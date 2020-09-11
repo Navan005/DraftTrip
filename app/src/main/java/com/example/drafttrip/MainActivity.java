@@ -12,8 +12,6 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-
-    private Button nextpagebtn;
     private Button signup;
     private Button login;
 
@@ -22,15 +20,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        nextpagebtn=(Button) findViewById(R.id.mainBtn);
 
-        nextpagebtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent=new Intent(MainActivity.this, ListActivity.class);
-                startActivity(intent);
-            }
-        });
+
+
         TextView v = (TextView) findViewById(R.id.textView2);
         v.setSelected(true);
 
