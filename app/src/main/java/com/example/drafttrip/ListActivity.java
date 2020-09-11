@@ -71,9 +71,13 @@ public class ListActivity extends AppCompatActivity {
         cottage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(ListActivity.this, ProductActivity.class);
+                Intent intent=new Intent(ListActivity.this, CottagelistActivity.class);
                 startActivity(intent);
             }
         });
+
+
+
+
     }
 }
