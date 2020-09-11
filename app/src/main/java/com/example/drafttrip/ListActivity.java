@@ -2,10 +2,13 @@ package com.example.drafttrip;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+
+import static com.example.drafttrip.R.drawable.ritz;
 
 public class ListActivity extends AppCompatActivity {
 
@@ -15,7 +18,9 @@ public class ListActivity extends AppCompatActivity {
     ImageView cottage;
     ImageView country;
     ImageView cabin;
+    ImageView ritz1;
 
+    @SuppressLint("ResourceType")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -75,6 +80,7 @@ public class ListActivity extends AppCompatActivity {
                 startActivity(intent5);
             }
         });
+
 
 
 
