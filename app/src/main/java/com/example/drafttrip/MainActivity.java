@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
 
     private Button signup;
     private Button login;
+    private Button contact;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,7 +44,14 @@ signup=(Button)findViewById(R.id.button2);
                 startActivity(intent1);
             }
         });
-
+        contact=(Button)findViewById(R.id.button4);
+        contact.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent1=new Intent(MainActivity.this, Contact.class);
+                startActivity(intent1);
+            }
+        });
 
     }
 
