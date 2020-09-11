@@ -7,29 +7,25 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class Paynow extends AppCompatActivity {
-private Button b19,b;
+public class Thanku extends AppCompatActivity {
+private Button b;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_paynow);
+        setContentView(R.layout.activity_thanku);
 
 
-        b19=(Button)findViewById(R.id.button19);
+
+
         b=(Button)findViewById(R.id.new_button);
 
-
-        b19.setOnClickListener(new View.OnClickListener() {
+        b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent1=new Intent(Paynow.this, Thanku.class);
+                Intent intent1=new Intent(Thanku.this, ListActivity.class);
                 startActivity(intent1);
             }
         });
-
-
-
-
 
     }
 }
