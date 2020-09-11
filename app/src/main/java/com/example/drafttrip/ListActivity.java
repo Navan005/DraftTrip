@@ -31,7 +31,7 @@ public class ListActivity extends AppCompatActivity {
         hotel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(ListActivity.this, ProductActivity.class);
+                Intent intent=new Intent(ListActivity.this, HotellistActivity.class);
                 startActivity(intent);
             }
         });
@@ -39,40 +39,40 @@ public class ListActivity extends AppCompatActivity {
         apartment.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(ListActivity.this, ProductActivity.class);
-                startActivity(intent);
+                Intent intent1=new Intent(ListActivity.this, ApartmentlistActivity.class);
+                startActivity(intent1);
             }
         });
 
         villa.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(ListActivity.this, ProductActivity.class);
-                startActivity(intent);
+                Intent intent2=new Intent(ListActivity.this, VillalistActivity.class);
+                startActivity(intent2);
             }
         });
 
         cabin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(ListActivity.this, ProductActivity.class);
-                startActivity(intent);
+                Intent intent3=new Intent(ListActivity.this, CabinlistActivity.class);
+                startActivity(intent3);
             }
         });
 
         country.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(ListActivity.this, ProductActivity.class);
-                startActivity(intent);
+                Intent intent4=new Intent(ListActivity.this, CountrylistActivity.class);
+                startActivity(intent4);
             }
         });
 
         cottage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(ListActivity.this, CottagelistActivity.class);
-                startActivity(intent);
+                Intent intent5=new Intent(ListActivity.this, CottagelistActivity.class);
+                startActivity(intent5);
             }
         });
 

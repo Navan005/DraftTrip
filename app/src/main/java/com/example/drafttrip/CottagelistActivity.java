@@ -18,7 +18,7 @@ public class CottagelistActivity extends AppCompatActivity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_hotellist);
+        setContentView(R.layout.activity_cottagelist);
 
 
 

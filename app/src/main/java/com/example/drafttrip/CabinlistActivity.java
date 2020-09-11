@@ -15,7 +15,7 @@ public class CabinlistActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_hotellist);
+        setContentView(R.layout.activity_cabinlist);
 
         // Making a array list in order to store value.
         lstProduct = new ArrayList<>();
