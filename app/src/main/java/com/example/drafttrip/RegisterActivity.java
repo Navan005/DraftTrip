@@ -41,7 +41,7 @@ public class RegisterActivity extends AppCompatActivity {
                 String fPhone = regPhone.getText().toString().trim();
                 String fmail = regMail.getText().toString().trim();
                 String fPassword = regPassword.getText().toString().trim();
-                if (fname.isEmpty() || fPassword.isEmpty() || fmail.isEmpty() || fPhone.isEmpty()) {
+                if (fname.isEmpty() || fPassword.isEmpty() || fmail.isEmpty() || fPhone.isEmpty() || !fmail.contains("@") || fPhone.length()!=10) {
                     Toast.makeText(RegisterActivity.this, "Please fill all the details", Toast.LENGTH_SHORT).show();
                 } else {
                     insertData(fname,fPhone,fmail,fPassword);
