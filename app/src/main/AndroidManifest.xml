@@ -10,10 +10,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".BriefActivity"></activity>
+        <activity android:name=".Aboutus"></activity>
+        <activity android:name=".BriefActivity" />
         <activity android:name=".Thanku" />
         <activity android:name=".Contact" />
         <activity android:name=".Paynow" />
+        <activity android:name=".SettingsActivity" />
         <activity android:name=".RegisterActivity" />
         <activity android:name=".signin" />
         <activity android:name=".Signup" />

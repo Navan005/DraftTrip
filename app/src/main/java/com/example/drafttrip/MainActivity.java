@@ -85,7 +85,8 @@ signup=(Button)findViewById(R.id.button2);
             return true;
         }
         if (id == R.id.about){
-            Intent intent=new Intent(MainActivity.this,Contact.class);
+            Intent intent=new Intent(MainActivity.this,Aboutus.class);
+
             startActivity(intent);
             return true;
         }
