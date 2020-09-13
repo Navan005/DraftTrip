@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -35,6 +36,8 @@ Button b1 = (Button)findViewById(R.id.btnLogin);
         db = openHelper.getReadableDatabase();
         etLoginGmail = findViewById(R.id.etLogGmail);
         etLoginPassword = findViewById(R.id.etLoginPassword);
+        final MediaPlayer media = MediaPlayer.create(this,R.raw.beep);
+
 
 
 
@@ -44,6 +47,7 @@ Button b1 = (Button)findViewById(R.id.btnLogin);
                 openActivity2();
             }
         });
+media.start();
 
 
 

@@ -3,6 +3,7 @@ package com.example.drafttrip;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -12,6 +13,8 @@ import android.widget.Button;
  */
 public class Paynow extends AppCompatActivity {
 private Button b19,b;
+    final MediaPlayer media = MediaPlayer.create(this,R.raw.beep);
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,6 +29,8 @@ private Button b19,b;
             @Override
             public void onClick(View view) {
                 Intent intent1=new Intent(Paynow.this, Thanku.class);
+                media.start();
+
                 startActivity(intent1);
             }
         });
