@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
-    >
+    android:background="#2196F3">
 
 
     <TextView
@@ -37,7 +37,6 @@
         android:background="#FFF8F676"
         android:text="GO BACK TO VIEW"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        />
+        app:layout_constraintStart_toStartOf="parent" />
 
 </RelativeLayout>

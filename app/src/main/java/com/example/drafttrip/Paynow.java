@@ -13,7 +13,6 @@ import android.widget.Button;
  */
 public class Paynow extends AppCompatActivity {
 private Button b19,b;
-    final MediaPlayer media = MediaPlayer.create(this,R.raw.beep);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +28,6 @@ private Button b19,b;
             @Override
             public void onClick(View view) {
                 Intent intent1=new Intent(Paynow.this, Thanku.class);
-                media.start();
 
                 startActivity(intent1);
             }

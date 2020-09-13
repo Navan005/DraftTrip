@@ -10,9 +10,11 @@
     android:paddingRight="18dp"
     android:paddingTop="16dp"
     tools:context=".RegisterActivity">
+
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="#2196F3">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -33,6 +35,7 @@
                 android:maxLines="1"
                 android:padding="8dp"
                 android:textColorHint="#ffffff" />
+
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
@@ -51,6 +54,7 @@
                 android:maxLines="1"
                 android:padding="8dp"
                 android:textColorHint="#ffffff" />
+
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
@@ -69,6 +73,7 @@
                 android:maxLines="1"
                 android:padding="8dp"
                 android:textColorHint="#ffffff" />
+
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
@@ -90,24 +95,26 @@
                 android:paddingRight="8dp"
                 android:paddingBottom="8dp"
                 android:textColorHint="#ffffff" />
+
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:background="#f9d7db" />
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/btnRegLogin"
 
+            <Button
+                android:id="@+id/btnRegLogin"
+                style="@style/Base.TextAppearance.AppCompat.Body1"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:clickable="true"
+                android:padding="16dp"
                 android:text="Register"
                 android:textAllCaps="false"
-                android:textStyle="normal"
-                android:layout_marginTop="30dp"
-                style="@style/Base.TextAppearance.AppCompat.Body1"
-                android:textSize="18sp"
                 android:textColor="#f16f7d"
-                android:padding="16dp"
-                android:clickable="true"/>
+                android:textSize="18sp"
+                android:textStyle="normal" />
 
         </LinearLayout>
     </ScrollView>

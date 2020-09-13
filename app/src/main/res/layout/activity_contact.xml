@@ -4,19 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Contact"
+    android:background="#2196F3"
     android:orientation="vertical"
-    >
+    tools:context=".Contact">
 
 
     <TextView
         android:id="@+id/contact_us"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:text="Contact Us"
         android:textColor="@android:color/holo_red_dark"
-        android:textSize="33sp"
-        android:layout_gravity="center"/>
+        android:textSize="33sp" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -37,8 +37,8 @@
         android:id="@+id/email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
-        android:hint="Write your email" />
+        android:hint="Write your email"
+        android:textSize="20sp" />
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -78,8 +78,6 @@
         android:layout_height="wrap_content"
         android:text="also can send email to:harpal779@gmail.com"
         android:textSize="15sp" />
-
-
 
 
 </LinearLayout>
