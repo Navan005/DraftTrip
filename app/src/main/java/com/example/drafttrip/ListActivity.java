@@ -45,6 +45,9 @@ public class ListActivity extends AppCompatActivity {
     ImageView ritz1;
 
     @SuppressLint("ResourceType")
+    /**
+    *image view listing
+    */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,6 +61,9 @@ public class ListActivity extends AppCompatActivity {
         cabin = (ImageView)  findViewById(R.id.cabin_img);
 
         hotel.setOnClickListener(new View.OnClickListener() {
+            /**
+            * buttonlistener
+            */
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(ListActivity.this, HotellistActivity.class);
@@ -66,6 +72,9 @@ public class ListActivity extends AppCompatActivity {
         });
 
         apartment.setOnClickListener(new View.OnClickListener() {
+               /**
+            * buttonlistener
+            */
             @Override
             public void onClick(View view) {
                 Intent intent1=new Intent(ListActivity.this, ApartmentlistActivity.class);
@@ -74,6 +83,9 @@ public class ListActivity extends AppCompatActivity {
         });
 
         villa.setOnClickListener(new View.OnClickListener() {
+               /**
+            * buttonlistener
+            */
             @Override
             public void onClick(View view) {
                 Intent intent2=new Intent(ListActivity.this, VillalistActivity.class);
@@ -82,6 +94,9 @@ public class ListActivity extends AppCompatActivity {
         });
 
         cabin.setOnClickListener(new View.OnClickListener() {
+               /**
+            * buttonlistener
+            */
             @Override
             public void onClick(View view) {
                 Intent intent3=new Intent(ListActivity.this, CabinlistActivity.class);
@@ -90,6 +105,9 @@ public class ListActivity extends AppCompatActivity {
         });
 
         country.setOnClickListener(new View.OnClickListener() {
+               /**
+            * buttonlistener
+            */
             @Override
             public void onClick(View view) {
                 Intent intent4=new Intent(ListActivity.this, CountrylistActivity.class);
@@ -98,6 +116,9 @@ public class ListActivity extends AppCompatActivity {
         });
 
         cottage.setOnClickListener(new View.OnClickListener() {
+               /**
+            * buttonlistener
+            */
             @Override
             public void onClick(View view) {
                 Intent intent5=new Intent(ListActivity.this, CottagelistActivity.class);
