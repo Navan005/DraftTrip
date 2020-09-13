@@ -23,7 +23,9 @@ public class SettingsActivity extends AppCompatActivity {
      * The constant switch_preferences.
      */
     public static final String switch_preferences = "switch_preference";
-
+    /**
+    *the create method
+    */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,16 +35,16 @@ public class SettingsActivity extends AppCompatActivity {
                 .replace(R.id.settings, new SettingsFragment())
                 .commit();
         ActionBar actionBar = getSupportActionBar();
-        if (actionBar != null) {
+        if (actionBar != null) { //validating
             actionBar.setDisplayHomeAsUpEnabled(true);
         }
     }
 
-    /**
+    
+    public static class SettingsFragment extends PreferenceFragmentCompat {
+/**
      * The type Settings fragment.
      */
-    public static class SettingsFragment extends PreferenceFragmentCompat {
-
 
         @Override
         public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
@@ -58,6 +60,10 @@ public class SettingsActivity extends AppCompatActivity {
 
             final androidx.preference.SwitchPreference onOffRandomColor = (androidx.preference.SwitchPreference) findPreference(SettingsActivity.switch_preferences);
             onOffRandomColor.setOnPreferenceChangeListener(new androidx.preference.SwitchPreference.OnPreferenceChangeListener() {
+                /**
+                *notification panel
+                * checking the switch
+                */
                 @Override
                 public boolean onPreferenceChange(Preference preference, Object newValue) {
                     if(onOffRandomColor.isChecked()){
