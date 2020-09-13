@@ -25,7 +25,9 @@ public class signin extends AppCompatActivity {
     private SQLiteOpenHelper openHelper;
 
 
-
+        /**
+        *create method
+        */
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +45,9 @@ Button b1 = (Button)findViewById(R.id.btnLogin);
 
 
         b1.setOnClickListener(new View.OnClickListener() {
+                /**
+                *listener
+                */
             public void onClick(View v) {
                 openActivity2();
             }
@@ -54,7 +59,12 @@ media.start();
 
 
     }
-//connecting with database using DatabaseHelper and confirm the authentication
+
+        /**
+        *connecting the Database 
+        *using database helper 
+        *confirming the authentication
+        */
     private void openActivity2()
     {
         String email = etLoginGmail.getText().toString().trim();
@@ -66,10 +76,10 @@ media.start();
             if (cursor != null) {
                 if (cursor.getCount() > 0) {
                     startActivity(new Intent(signin.this, ListActivity.class));
-                    Toast.makeText(getApplicationContext(), "Login sucess", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "Login sucess", Toast.LENGTH_SHORT).show();//for success
 
                 } else {
-                    Toast.makeText(getApplicationContext(), "Login error", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "Login error", Toast.LENGTH_SHORT).show();// for error
                 }
             }
         }
