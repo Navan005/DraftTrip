@@ -7,13 +7,34 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
+/**
+ * The type Product activity.
+ */
 public class ProductActivity extends AppCompatActivity {
 
+    /**
+     * The Hotel.
+     */
     ImageView hotel;
+    /**
+     * The Apartment.
+     */
     ImageView apartment;
+    /**
+     * The Cabin.
+     */
     ImageView cabin;
+    /**
+     * The Villa.
+     */
     ImageView villa;
+    /**
+     * The Cottage.
+     */
     ImageView cottage;
+    /**
+     * The Country.
+     */
     ImageView country;
 
 

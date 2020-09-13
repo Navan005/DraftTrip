@@ -12,6 +12,9 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+/**
+ * The type Signin.
+ */
 public class signin extends AppCompatActivity {
 
         private EditText etLoginGmail;
@@ -47,7 +50,7 @@ Button b1 = (Button)findViewById(R.id.btnLogin);
 
 
     }
-
+//connecting with database using DatabaseHelper and confirm the authentication
     private void openActivity2()
     {
         String email = etLoginGmail.getText().toString().trim();

@@ -10,14 +10,38 @@ import android.widget.ImageView;
 
 import static com.example.drafttrip.R.drawable.ritz;
 
+/**
+ * The type List activity.
+ */
 public class ListActivity extends AppCompatActivity {
 
+    /**
+     * The Hotel.
+     */
     ImageView hotel;
+    /**
+     * The Apartment.
+     */
     ImageView apartment;
+    /**
+     * The Villa.
+     */
     ImageView villa;
+    /**
+     * The Cottage.
+     */
     ImageView cottage;
+    /**
+     * The Country.
+     */
     ImageView country;
+    /**
+     * The Cabin.
+     */
     ImageView cabin;
+    /**
+     * The Ritz 1.
+     */
     ImageView ritz1;
 
     @SuppressLint("ResourceType")

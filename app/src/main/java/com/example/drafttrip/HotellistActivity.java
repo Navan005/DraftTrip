@@ -19,10 +19,19 @@ import java.util.List;
 
 import static com.example.drafttrip.R.drawable.ritz;
 
+/**
+ * The type Hotellist activity.
+ */
 public class HotellistActivity extends AppCompatActivity {
 
+    /**
+     * The Lst product.
+     */
     List<Product> lstProduct ;
-   Button b1;
+    /**
+     * The B 1.
+     */
+    Button b1;
     @RequiresApi(api = Build.VERSION_CODES.Q)
     @SuppressLint("ResourceType")
     @Override

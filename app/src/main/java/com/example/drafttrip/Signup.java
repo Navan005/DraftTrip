@@ -4,6 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+/**
+ * The type Signup.
+ */
 public class Signup extends AppCompatActivity {
 
     @Override

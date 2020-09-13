@@ -12,6 +12,9 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+/**
+ * The type Register activity.
+ */
 public class RegisterActivity extends AppCompatActivity {
     private Button registerBtn;
 
@@ -52,6 +55,15 @@ public class RegisterActivity extends AppCompatActivity {
 
 
     }
+
+    /**
+     * Insert data.
+     *
+     * @param fname     the fname
+     * @param fPhone    the f phone
+     * @param fmail     the fmail
+     * @param fPassword the f password
+     */
     public void insertData(String fname, String fPhone, String fmail, String fPassword){
         ContentValues contentValues = new ContentValues();
         contentValues.put(DatabaseHelper.COL_2,fname);

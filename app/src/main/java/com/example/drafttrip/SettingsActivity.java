@@ -10,9 +10,18 @@ import androidx.preference.EditTextPreference;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceFragmentCompat;
 
+/**
+ * The type Settings activity.
+ */
 public class SettingsActivity extends AppCompatActivity {
 
+    /**
+     * The Test pref.
+     */
     public SwitchPreference testPref;
+    /**
+     * The constant switch_preferences.
+     */
     public static final String switch_preferences = "switch_preference";
 
     @Override
@@ -29,6 +38,9 @@ public class SettingsActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * The type Settings fragment.
+     */
     public static class SettingsFragment extends PreferenceFragmentCompat {
 
 

@@ -12,8 +12,14 @@ import android.widget.Button;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * The type Apartmentlist activity.
+ */
 public class ApartmentlistActivity extends AppCompatActivity {
 
+    /**
+     * The Lst product.
+     */
     List<Product> lstProduct ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {

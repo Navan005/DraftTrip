@@ -14,11 +14,20 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 
+/**
+ * The type Recycler view adapter.
+ */
 class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.MyViewHolder>{
 
     private Context mContext ;
     private List<Product> mData ;
 
+    /**
+     * Instantiates a new Recycler view adapter.
+     *
+     * @param mContext the m context
+     * @param mData    the m data
+     */
     public RecyclerViewAdapter(Context mContext, List<Product> mData) {
         this.mContext = mContext;
         this.mData = mData;
@@ -65,13 +74,33 @@ class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.MyVie
         return mData.size();
     }
 
+    /**
+     * The type My view holder.
+     */
     public static class MyViewHolder extends RecyclerView.ViewHolder {
 
+        /**
+         * The Tv book title.
+         */
         TextView tv_book_title;
+        /**
+         * The Img book thumbnail.
+         */
         ImageView img_book_thumbnail;
+        /**
+         * The Card view.
+         */
         CardView cardView ;
+        /**
+         * The Price product.
+         */
         TextView price_product;
 
+        /**
+         * Instantiates a new My view holder.
+         *
+         * @param itemView the item view
+         */
         public MyViewHolder(View itemView) {
             super(itemView);
 

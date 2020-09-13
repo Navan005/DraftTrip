@@ -13,6 +13,9 @@ import android.widget.Toast;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
+/**
+ * The Cart Activity.
+ */
 public class BriefActivity extends AppCompatActivity {
 
     private TextView productTitle,productDescription, productPrice;
@@ -27,7 +30,7 @@ public class BriefActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_brief);
 
-        //assigning values to the declared variables.
+        //assigning id's using to retrieve information.
         productTitle = (TextView) findViewById(R.id.product_title);
         productPrice = (TextView) findViewById(R.id.price_pro);
         productDescription = (TextView) findViewById(R.id.product_description);

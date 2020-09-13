@@ -7,6 +7,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+/**
+ * The type Thanku.
+ */
 public class Thanku extends AppCompatActivity {
 private Button b;
     @Override

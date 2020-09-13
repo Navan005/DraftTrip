@@ -13,7 +13,13 @@ import android.widget.Button;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * The type Cottagelist activity.
+ */
 public class CottagelistActivity extends AppCompatActivity {
+    /**
+     * The Lst product.
+     */
     List<Product> lstProduct;
 
     protected void onCreate(Bundle savedInstanceState) {
