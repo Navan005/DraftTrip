@@ -2,6 +2,6 @@ DraftTrip is a hotel booking mobile application. You can book from a varity of a
 
 Team:
 Harpal Singh
-Jaswinder Kaur
 Sukhman Kaur
 Avneet Kaur
+Jaswinder Kaur

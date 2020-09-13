@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
     private Button signup;
     private Button login;
     private Button contact;
+    private Button menu;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +31,6 @@ final MediaPlayer media = MediaPlayer.create(this,R.raw.beep);
 
         TextView v = (TextView) findViewById(R.id.textView2);
         v.setSelected(true);
-
 signup=(Button)findViewById(R.id.button2);
         signup.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -76,6 +76,16 @@ signup=(Button)findViewById(R.id.button2);
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
             Intent intent=new Intent(MainActivity.this,SettingsActivity.class);
+            startActivity(intent);
+            return true;
+        }
+        if (id == R.id.contact){
+            Intent intent=new Intent(MainActivity.this,Contact.class);
+            startActivity(intent);
+            return true;
+        }
+        if (id == R.id.about){
+            Intent intent=new Intent(MainActivity.this,Contact.class);
             startActivity(intent);
             return true;
         }
