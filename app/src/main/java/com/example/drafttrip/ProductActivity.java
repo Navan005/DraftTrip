@@ -37,15 +37,13 @@ public class ProductActivity extends AppCompatActivity {
      */
     ImageView country;
 
-
+    /**
+    *Image views are assigned
+    */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_product);
-
-
-
-        //Imageviews are assigned to the declared variables.
 
 
         hotel = (ImageView)  findViewById(R.id.hotel_img);
@@ -57,7 +55,9 @@ public class ProductActivity extends AppCompatActivity {
 
 
 
-        //Dairy
+        /**
+        * Dairy
+        */
         hotel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -76,7 +76,9 @@ public class ProductActivity extends AppCompatActivity {
         });
 
 
-        //Snacks
+        /**
+        *Snacks
+        */
         cabin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -94,7 +96,9 @@ public class ProductActivity extends AppCompatActivity {
             }
         });
 
-        //Bread
+        /**
+        *Bread
+        */
        cottage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -104,7 +108,9 @@ public class ProductActivity extends AppCompatActivity {
         });
 
 
-        //Beer
+        /**
+        *Beer
+        */
         country.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
