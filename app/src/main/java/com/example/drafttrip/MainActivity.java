@@ -3,6 +3,7 @@ package com.example.drafttrip;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -24,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
+final MediaPlayer media = MediaPlayer.create(this,R.raw.beep);
 
 
         TextView v = (TextView) findViewById(R.id.textView2);
@@ -35,6 +36,7 @@ signup=(Button)findViewById(R.id.button2);
             @Override
             public void onClick(View view) {
                 Intent intent1=new Intent(MainActivity.this, RegisterActivity.class);
+                media.start();
                 startActivity(intent1);
             }
         });
@@ -44,6 +46,7 @@ signup=(Button)findViewById(R.id.button2);
             @Override
             public void onClick(View view) {
                 Intent intent1=new Intent(MainActivity.this, signin.class);
+                media.start();
                 startActivity(intent1);
             }
         });
@@ -52,6 +55,7 @@ signup=(Button)findViewById(R.id.button2);
             @Override
             public void onClick(View view) {
                 Intent intent1=new Intent(MainActivity.this, Contact.class);
+                media.start();
                 startActivity(intent1);
             }
         });
