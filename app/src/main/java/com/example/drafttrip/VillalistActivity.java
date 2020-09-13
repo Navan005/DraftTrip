@@ -41,13 +41,6 @@ public class VillalistActivity extends AppCompatActivity {
         Button b1;
 
 
-        b1 = (Button) findViewById(R.id.button3);
-        b1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent5=new Intent(VillalistActivity.this, Paynow.class);
-                startActivity(intent5);
-            }
-        });
+
     }
 }

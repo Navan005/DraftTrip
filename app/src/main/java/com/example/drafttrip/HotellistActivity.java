@@ -53,14 +53,7 @@ public class HotellistActivity extends AppCompatActivity {
         recyclev.setAdapter(myAdapter);
 
 
-        b1 = (Button) findViewById(R.id.button3);
-        b1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent5=new Intent(HotellistActivity.this, Paynow.class);
-                startActivity(intent5);
-            }
-        });
+
 
 
 

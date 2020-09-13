@@ -12,14 +12,8 @@ import android.widget.Button;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * The type Apartmentlist activity.
- */
 public class ApartmentlistActivity extends AppCompatActivity {
 
-    /**
-     * The Lst product.
-     */
     List<Product> lstProduct ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,13 +35,6 @@ public class ApartmentlistActivity extends AppCompatActivity {
 Button b1;
 
 
-        b1 = (Button) findViewById(R.id.button3);
-        b1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent5=new Intent(ApartmentlistActivity.this, Paynow.class);
-                startActivity(intent5);
-            }
-        });
+
     }
 }
